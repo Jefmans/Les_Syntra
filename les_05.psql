@@ -1,0 +1,301 @@
+-- INSERT INTO proglang_tbl
+--         (id, language, author, year, standard)
+--         VALUES
+--         (1, 'Prolog', 'Colmerauer', 1972, 'ISO'),
+--         (2, 'Perl', 'Wall', 1987, null),
+--         (3, 'ANSI', 'Iverson', '1964', 'APL'),
+--         (4, 'JOVIAL', 'Schwartz', 1959, 'US-DOD'),
+--         (5, 'APT', 'Ross', 1959, 'ISO'),
+--         (6, 'Forth', 'Moore', 1973, NULL),
+--         (7, 'Tcl', 'Ousterhout', 1988, NULL),
+--         (8, 'PL/I', 'IBM', 1964, 'ECMA'),
+--         (9, 'Fortran', 'Backus', 1957, 'ANSI')
+--         ;   
+
+SELECT * FROM proglang_tbl
+        WHERE language LIKE '%T%';
+
+SELECT language,
+        (year % 10) remain
+        FROM proglang_tbl;        
+
+SELECT AVG(year) FROM proglang_tbl;
+
+
+SELECT * FROM proglang_tbl        
+WHERE year > (SELECT AVG(year) FROM proglang_tbl);
+
+SELECT standard FROM proglang_tbl
+        WHERE standard IS NOT NULL
+        GROUP BY standard;
+
+SELECT standard, language FROM proglang_tbl
+        WHERE standard IS NOT NULL
+        GROUP BY standard, language;        
+
+SELECT DISTINCT(standard) FROM proglang_tbl
+WHERE standard IS NOT NULL;
+
+SELECT DISTINCT (standard) , count(*), min(year) 
+FROM proglang_tbl
+GROUP BY standard;
+
+SELECT standard , count(*), min(year), 1975 _1975
+FROM proglang_tbl
+GROUP BY standard;
+
+SELECT standard
+FROM proglang_tbl
+WHERE COUNT(standard) > 1
+GROUP BY standard;
+
+SELECT standard
+FROM proglang_tbl
+GROUP BY standard
+HAVING COUNT(standard) > 1;  
+
+SELECT * FROM authors_tbl;
+SELECT * FROM newlang_tbl;
+
+SELECT author, language
+FROM authors_tbl, newlang_tbl
+WHERE language_id = id;
+
+ALTER TABLE authors_tbl
+RENAME COLUMN aurhor_id TO author_id
+
+DELETE FROM authors_tbl;
+DELETE FROM newlang_tbl;
+
+INSERT INTO newlang_tbl
+    (id, language, year, standard)
+    VALUES
+    (1, 'Prolog', 1972, 'ISO');
+
+INSERT INTO newlang_tbl
+    (id, language, year)
+    VALUES
+    (2, 'Perl', 1987);
+
+INSERT INTO newlang_tbl
+    (id, language, year, standard)
+    VALUES
+    (3, 'APL', 1964, 'ANSI');
+
+INSERT INTO newlang_tbl
+    (id, language, year)
+    VALUES
+    (4, 'Tcl', 1988);
+
+INSERT INTO newlang_tbl
+    (id, language, year, standard)
+    VALUES
+    (5, 'BASIC', 1964, 'ANSI');
+
+INSERT INTO authors_tbl
+    (author_id, author, language_id)
+    VALUES (6, 'Kurtz', 5);
+
+INSERT INTO authors_tbl
+    (author_id, author, language_id)
+    VALUES (1, 'Colmerauer', 1);
+
+INSERT INTO authors_tbl
+    (author_id, author, language_id)
+    VALUES (2, 'Wall', 2);
+
+INSERT INTO authors_tbl
+    (author_id, author, language_id)
+    VALUES (3, 'Ousterhout', 4);
+
+INSERT INTO authors_tbl
+    (author_id, author, language_id)
+    VALUES (4, 'Iverson', 3);
+
+INSERT INTO authors_tbl 
+    (author_id, author, language_id)
+    VALUES
+    (5, 'Kemeny', 5);    
+
+SELECT * FROM authors_tbl;
+SELECT * FROM newlang_tbl;
+
+
+SELECT author, language
+FROM authors_tbl, newlang_tbl
+WHERE language_id = id;
+
+
+ALTER TABLE authors_tbl
+RENAME COLUMN id
+ TO language_id;
+
+
+SELECT author, language
+FROM authors_tbl JOIN newlang_tbl
+ON language_id = id;
+
+SELECT *
+FROM  newlang_tbl INNER JOIN authors_tbl
+ON language_id = id;
+
+
+
+CREATE TABLE languages_tbl
+(language_id INTEGER, language VARCHAR(20));
+
+INSERT INTO languages_tbl VALUES (4, 'Tcl');
+
+SELECT * FROM languages_tbl;
+SELECT * FROM authors_tbl;
+SELECT * FROM newlang_tbl;
+
+SELECT author, language
+FROM authors_tbl JOIN languages_tbl
+ON authors_tbl.language_id = languages_tbl.language_id;
+
+SELECT author, language
+FROM authors_tbl a JOIN languages_tbl l
+ON a.language_id = l.language_id
+
+
+INSERT INTO newlang_tbl
+    (id, language, year)
+    VALUES
+    (6, 'X_X_X_', 1988);
+
+INSERT INTO newlang_tbl
+    (id, language, year)
+    VALUES
+    (7, 'AAAAA', 1988);
+
+INSERT INTO authors_tbl
+    (author_id, author, language_id)
+    VALUES (7, 'Jef', null);
+
+SELECT * FROM authors_tbl;
+SELECT * FROM newlang_tbl;  
+
+SELECT author, language
+FROM authors_tbl a JOIN newlang_tbl l
+ON a.language_id = l.id;
+
+INSERT INTO newlang_tbl
+VALUES (8, 'Lisp', 1958, 'ANSI');
+
+SELECT * FROM authors_tbl;
+SELECT * FROM newlang_tbl;  
+
+SELECT author, language
+FROM authors_tbl a LEFT OUTER JOIN newlang_tbl l
+ON a.language_id = l.id;
+
+SELECT author, language
+FROM authors_tbl a RIGHT OUTER JOIN newlang_tbl l
+ON a.language_id = l.id;
+
+SELECT author, language
+FROM newlang_tbl l  LEFT OUTER JOIN authors_tbl a 
+ON a.language_id = l.id;
+
+SELECT author, language
+FROM authors_tbl a FULL JOIN newlang_tbl l
+ON a.language_id = l.id;
+
+SELECT author, language
+FROM authors_tbl, newlang_tbl;
+
+SELECT author, language, year
+FROM authors_tbl, newlang_tbl;
+
+SELECT author, language
+FROM authors_tbl CROSS JOIN newlang_tbl;
+
+
+CREATE TABLE inflang_tbl (id INTEGER    PRIMARY KEY,
+        language VARCHAR(20) NOT NULL,
+        influenced_by INTEGER);
+        
+INSERT INTO inflang_tbl (id, language)
+        VALUES (1, 'Fortran');
+
+INSERT INTO inflang_tbl (id, language, influenced_by)
+        VALUES (2, 'Pascal', 3);
+
+INSERT INTO inflang_tbl (id, language, influenced_by)
+        VALUES (3, 'Algol', 1);
+
+SELECT * FROM inflang_tbl;
+SELECT * FROM inflang_tbl; 
+
+SELECT *
+FROM inflang_tbl l1, inflang_tbl l2
+WHERE l1.id = l2.influenced_by;
+
+SELECT l1.id,
+        l1.language,
+        l2.language AS influenced
+FROM inflang_tbl l1, inflang_tbl l2
+WHERE l1.id = l2.influenced_by;
+
+SELECT l1.id,
+        l1.language,
+        l2.language AS influenced_by
+FROM inflang_tbl l1, inflang_tbl l2
+WHERE l2.id = l1.influenced_by;
+
+SELECT l1.id,
+        l1.language,
+        l2.language AS influenced
+FROM inflang_tbl l1 JOIN inflang_tbl l2
+ON l1.id = l2.influenced_by;
+
+SELECT * FROM authors_tbl;
+SELECT * FROM newlang_tbl; 
+
+SELECT id,
+        author_id,
+        author,
+        language
+FROM authors_tbl, newlang_tbl
+WHERE id = author_id;
+
+SELECT id,
+        author_id,
+        author,
+        language
+FROM authors_tbl, newlang_tbl
+WHERE id < author_id;
+
+SELECT id,
+        author_id,
+        author,
+        language
+FROM authors_tbl, newlang_tbl
+WHERE author < language;
+
+
+-- SELECT *
+-- FROM INFORMATION_SCHEMA.COLUMNS
+-- WHERE TABLE_NAME = 'authors_tbl'
+
+SELECT * FROM authors_tbl;
+SELECT * FROM newlang_tbl; 
+
+SELECT l.id,
+        a.author_id,
+        a.author,
+        l.language
+FROM authors_tbl a, newlang_tbl l
+WHERE l.id = a.language_id;
+
+
+SELECT l.id,
+        a.author_id,
+        a.author,
+        l.language
+FROM authors_tbl a, newlang_tbl l
+WHERE l.id < a.author_id
+AND l.id = a.language_id;
+
+
