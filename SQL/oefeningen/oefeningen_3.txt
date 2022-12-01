@@ -1,0 +1,17 @@
+2.
+Voeg een kolom "iso_code" toe aan de landen. Zet in deze kolom de eerste 2 letters van de landen.
+
+2.
+Geef een lijst van alle steden met hun landen erbij.
+Geef een lijst van alle steden in SPANJE
+Voeg Belgie en Mechelen toe (link Belgie aan Mechelen). (stel dat je het id van Belgie niet weet)
+
+3.
+Geef een lijst met naam, voornaam en stad voor alle waarvan de achternaam begint met een B.
+
+4. 
+Naar welke store gaat "Elizabeth Brown"?
+Waar (stad, land) is deze store gelegen?
+
+
+
