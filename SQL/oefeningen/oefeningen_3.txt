@@ -7,7 +7,7 @@ Geef een lijst van alle steden in SPANJE
 Voeg Belgie en Mechelen toe (link Belgie aan Mechelen). (stel dat je het id van Belgie niet weet)
 
 3.
-Geef een lijst met naam, voornaam en stad voor alle waarvan de achternaam begint met een B.
+Geef een lijst met naam, voornaam en stad voor alle klanten waarvan de achternaam begint met een B.
 
 4. 
 Naar welke store gaat "Elizabeth Brown"?

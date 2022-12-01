@@ -7,7 +7,7 @@ d) wat is de waarde voor last_update van België? Wat is het datatype van last_u
 
 2. 
 a) Maak een tabel "accounts" aan met volgende kolommen:
-"user_id" als primary key, een unieke "username", een "password" en een uniek "email". Er moet altijd worden ingevoegd. (gebruik serial bij het id om deze automatisch te laten verhogen)
+"user_id" als primary key, een unieke "username", een "password" en een uniek "email". En er moet altijd data worden ingevoerd bij email. (gebruik serial bij het id om deze automatisch te laten verhogen)
 b) voeg de username "joske_vermeulen" toe. Je mag de rest zelf verzinnen. (de user_id laat je automatisch toevoegen)
 c) voeg jezelf toe. (geef je paswoord niet vrij ;-) (de user_id laat je automatisch toevoegen)
 d) check of de user_id automatisch is toegevoegd.

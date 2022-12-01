@@ -22,4 +22,4 @@ Welke categorieën heb je die met een "G" beginnen?
 Verhoog de verhuurprijs met 10%.
 
 7.
-Voeg een column toe bij film waarin je het jaar van aankoop (2020) zet.
+Voeg een column toe in de tabel bij film waarin je het jaar van aankoop (2020) zet.

@@ -1,0 +1,17 @@
+1.
+Geef de naam van klanten die in Spanje wonen.
+Geef de naam van klanten die in Madrid wonen.
+Geef het aantal klanten per stad in Spanje.
+
+2.
+Wat is de voornaam en naam van de klant met de het langste email adres?
+Wat is de voornaam en naam van de klant met de het kortste email adres?
+
+3.
+Geef het aantal films per categorie.
+soorteer op aantal films van groot naar klein.
+
+4.
+Welke store heeft het meeste ACTIE films.
+Geef het adres van de store met het meeste DRAMA films.
+In welk land ligt de store met de minste HORROR films?
