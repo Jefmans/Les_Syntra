@@ -191,10 +191,10 @@
 
 -- SELECT * FROM test_tbl;
 
-UPDATE proglang_tbl SET
-year = 1973,
-standard = 'ANSI'
-Where language = 'Forth';
+-- UPDATE proglang_tbl SET
+-- year = 1973,
+-- standard = 'ANSI'
+-- Where language = 'Forth';
 
 -- SELECT * FROM proglang_tbl;
 

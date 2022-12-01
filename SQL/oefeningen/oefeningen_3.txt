@@ -1,4 +1,4 @@
-2.
+1.
 Voeg een kolom "iso_code" toe aan de landen. Zet in deze kolom de eerste 2 letters van de landen.
 
 2.
