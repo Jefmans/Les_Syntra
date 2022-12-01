@@ -12,8 +12,8 @@ b) voeg de username "joske_vermeulen" toe. Je mag de rest zelf verzinnen. (de us
 c) voeg jezelf toe. (geef je paswoord niet vrij ;-) (de user_id laat je automatisch toevoegen)
 d) check of de user_id automatisch is toegevoegd.
 e) Check of je een derde account kan toevoegen met als user_id = 5
-d) Voeg nu opnieuw een account toe waarbij je de user_id opnieuw automatisch laat toevoegen. 
-f) wat is de user_id van deze laatst toegevoegde account?
+f) Voeg nu opnieuw een account toe waarbij je de user_id opnieuw automatisch laat toevoegen. 
+g) wat is de user_id van deze laatst toegevoegde account?
 
 
 3.

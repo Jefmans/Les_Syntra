@@ -1,0 +1,7 @@
+1.
+Geef de top 3 categorieën die het meest worden gehuurd in Canada worden.
+Welke taal wordt het meest in Canada gehuurd?
+
+2.
+Welke auteur komt het meest voor in de films die worden gehuurd in Canada in de stad die het meeste omzet heeft.
+

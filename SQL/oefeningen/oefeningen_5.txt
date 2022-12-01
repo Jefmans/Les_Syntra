@@ -1,6 +1,6 @@
 1.
 Geef de naam van klanten die in Spanje wonen.
-Geef de naam van klanten die in Madrid wonen.
+Geef naam en adres van klanten die in Madrid wonen.
 Geef het aantal klanten per stad in Spanje.
 
 2.
@@ -8,10 +8,23 @@ Wat is de voornaam en naam van de klant met de het langste email adres?
 Wat is de voornaam en naam van de klant met de het kortste email adres?
 
 3.
-Geef het aantal films per categorie.
-soorteer op aantal films van groot naar klein.
+Geef al de categorieën die niet op een "y" eindigen.
+Geef het aantal films per categorie. Soorteer op aantal films van groot naar klein.
+Geef de gemiddelde prijs per categorie.
+Geef de naam van de film die het meeste opbracht.
+Geef de top 10 van films die het minste opbrachten.
 
 4.
 Welke store heeft het meeste ACTIE films.
 Geef het adres van de store met het meeste DRAMA films.
 In welk land ligt de store met de minste HORROR films?
+
+5.
+Geef de naam van de film en de bijhorende categorie.
+Soorteer op categorie.
+Geef de naam van de klant en naam van de gehuurde filmen voor alle verhuurbeurten met een bedrag groter dan 5.
+
+6.
+Geef de naam van de klant die het meeste heeft gehuurd.
+Geef de naam van landen en hun totale omzet.
+Geef de naam van de steden, bijhorende land en de total opbrengst voor deze stad.
