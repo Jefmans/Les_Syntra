@@ -1,3 +1,27 @@
 1.
 Geef een lijst van de steden waar onze klanten uitkomen.
 
+2. 
+Geef een lijst van films met een verhuurwaarde groter dan 5
+Geef de namen van de films met een duur tussen 80 en 90 minuten.
+
+3.
+Geef alle landen die een "e" op positie 2 hebben.
+Geef alle landen met minder dan 5 letters.
+
+4.
+Geef me dan id van de fims, van groot naar klein, waar die een verhuurwaarde hebben kleiner als 3 of groter als 6.
+
+5.
+Welke adressen hebben geen postcode?
+Welke klanten  ......
+
+6.
+Geef de namen van de films in de store met id = 1.
+Geef het aantal films van deze store per categorie.
+
+7.
+Geef de naam en voornaam van de klanten die in totaal voor meer dan 10€ hebben gehuurd.
+
+8.
+Geef hoeveel heeft elke verkoper in totaal verhuurd. aantal films + totaal bedrag.
