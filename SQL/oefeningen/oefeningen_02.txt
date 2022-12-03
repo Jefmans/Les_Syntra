@@ -1,5 +1,5 @@
 1.
-Geef naam en voornbaam van alle klanten
+Geef naam en voornaam van alle klanten
 zet alfabetisch op naam 
 
 2.
@@ -11,12 +11,12 @@ en zet alfabetisch op voornaam
 Hoeveel landen zijn er in de db ?
 
 4.
-Hoeveel filmen zijn er die met een "A" beginnen?
+Hoeveel films zijn er die met een "A" beginnen?
 Hoeveel hiervan hebben een rental_rate hoger dan 3?
-En hoveel hiervan duren minder lang dan 60 minuten?
+En hoeveel hiervan duren minder lang dan 60 minuten?
 
 5.
-Welke categorieën heb je die met een "G" beginnen? 
+Welke categorieën beginnen met een "G" beginnen? 
 
 6.
 Verhoog de verhuurprijs met 10%.
