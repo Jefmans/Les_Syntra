@@ -1,6 +1,6 @@
 1.
 Geef de naam van klanten die in Spanje wonen.
-Geef naam en adres van klanten die in Madrid wonen.
+Geef naam en adres van klanten die in Gijn wonen.
 Geef het aantal klanten per stad in Spanje.
 
 2.
@@ -25,6 +25,6 @@ Soorteer op categorie.
 Geef de naam van de klant en naam van de gehuurde filmen voor alle verhuurbeurten met een bedrag groter dan 5.
 
 6.
-Geef de naam van de klant die het meeste heeft gehuurd.
+Geef de naam van de klant die het meeste (betaald + aantal films) heeft gehuurd.
 Geef de naam van landen en hun totale omzet.
 Geef de naam van de steden, bijhorende land en de total opbrengst voor deze stad.

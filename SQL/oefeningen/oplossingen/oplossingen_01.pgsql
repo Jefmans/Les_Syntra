@@ -2,9 +2,7 @@
 -- a)
 SELECT country FROM country;
 -- b) 109
-SELECT  country_id, 
-        country, 
-        last_update 
+SELECT  COUNT(*)
 FROM country;
 
 -- c)

@@ -97,10 +97,39 @@ ORDER BY category.name;
 
 
 -- 7.
--- Geef de naam en voornaam van de klanten die in totaal voor meer dan 10€ hebben gehuurd.
+-- Geef de naam en voornaam van de klanten die in totaal voor meer dan 100€ hebben gehuurd.
 
-
+SELECT customer.first_name, Customer.last_name, SUM(amount)
+FROM customer
+JOIN payment 
+ON customer.customer_id = payment.customer_id
+GROUP BY customer.customer_id
+HAVING SUM(amount) > 100
+ORDER BY customer.first_name DESC;
 
 -- 8.
--- Geef hoeveel heeft elke verkoper in totaal verhuurd. aantal films + totaal bedrag.
+-- Geef hoeveel elke verkoper in totaal heeft verhuurd. aantal films + totaal bedrag.
+
+SELECT staff.staff_id, staff.first_name, SUM(payment.amount), COUNT(rental.rental_id) as amount_of_films
+FROM rental
+JOIN staff
+ON staff.staff_id = rental.staff_id
+left JOIN payment
+ON payment.rental_id = rental.rental_id
+-- JOIN inventory
+-- ON inventory.inventory_id = rental.inventory_id
+GROUP BY staff.staff_id, staff.first_name;
+
+SELECT SUM(amount) FROM payment;
+SELECT count(rental_id) FROM rental;
+
+SELECT count(*) FROM rental
+WHERE staff_id = 1;
+
+SELECT count(*) FROM rental
+WHERE staff_id = 2;
+
+SELECT count(*) FROM payment
+WHERE rental_id = 0
+
 
