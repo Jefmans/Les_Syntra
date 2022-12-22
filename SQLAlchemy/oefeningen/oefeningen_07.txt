@@ -1,0 +1,9 @@
+1. Selecteer alle film, id en inventory_id
+
+2. Geef de films die niet in de inventory voorkomen
+
+3. geef de films met een verhurprijs groter dab de gemiddelde verhuurprijs. (gebruik een subquery)
+
+4. geef de id en titel van de films die zijn teruggebracht tussen '2005_05_29' en '2005_05_30' (gebruik subquery)
+
+5. Geef de voornaam + naam van de klanten die minstens 1 keer een film hebben gehuurd (gebuik subquery + EXISTS)

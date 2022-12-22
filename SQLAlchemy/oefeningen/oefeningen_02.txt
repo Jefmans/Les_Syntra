@@ -1,0 +1,25 @@
+1.
+Geef naam en voornaam van alle klanten
+zet alfabetisch op naam 
+
+2.
+Geef naam en voornaam van alle klanten
+waarvan de naam begint met een L
+en zet alfabetisch op voornaam
+
+3.
+Hoeveel landen zijn er in de db ?
+
+4.
+Hoeveel films zijn er die met een "A" beginnen?
+Hoeveel hiervan hebben een rental_rate hoger dan 3?
+En hoeveel hiervan duren minder lang dan 60 minuten?
+
+5.
+Welke categorieën beginnen met een "G" beginnen? 
+
+6.
+Verhoog de verhuurprijs met 10%.
+
+7.
+Voeg een column toe in de tabel bij film waarin je het jaar van aankoop (2020) zet.
