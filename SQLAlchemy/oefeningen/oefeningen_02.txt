@@ -16,7 +16,7 @@ Hoeveel hiervan hebben een rental_rate hoger dan 3?
 En hoeveel hiervan duren minder lang dan 60 minuten?
 
 5.
-Welke categorieën beginnen met een "G" beginnen? 
+Welke categorieën beginnen met een "G" ? 
 
 6.
 Verhoog de verhuurprijs met 10%.
