@@ -1,0 +1,8 @@
+__pycache__/
+
+venv/
+basis_programmeren/examen/jef_v1.py
+basis_programmeren/examen/jef_v2.py
+basis_programmeren/examen/jef.py
+
+../SQL/*
