@@ -8,6 +8,7 @@ class Winkel:
         self.stock = self._create_stock()
         self.virtuele_stock = self.stock
         self.klanten = []
+        self.rekening = 0
 
     def _create_stock(self):
         hond1 = Hond('woef','zwart','Labrador Retriever','zacht', 300)
@@ -43,12 +44,19 @@ class Winkel:
     def uit_virtuele_stock(self, dier):
         self.virtuele_stock.remove(dier)
 
+    def in_virtuele_stock(self, dier
+    ):
+        self.virtuele_stock.append(dier)
 
-    def in_stock(self):
-        pass
+    def uit_stock(self, dier):
+        self.stock.remove(dier)
 
     def maak_klant_aan(self, naam):
         self.klanten.append(Klant(naam, self))
+
+    def verkoop(self, totaal_prijs):
+        self.rekening += totaal_prijs
+
 
 
 def main():
