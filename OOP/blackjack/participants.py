@@ -36,8 +36,8 @@ class Player(Participant):
         
     
     def take_action(self, choice):
-        DICT_OF_CHOICES = {"bet": "self._bet()"}
-        exec(DICT_OF_CHOICES[choice])
+        # DICT_OF_CHOICES = {"bet": "self._bet()"}
+        # exec(DICT_OF_CHOICES[choice])
 
         if choice == "bet":
             self._bet()

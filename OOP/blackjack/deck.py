@@ -18,4 +18,9 @@ class Deck:
     def shuffle(self):
         random.shuffle(self.cards)
 
-    
+# def main():
+#     deck = Deck()
+#     print(len(deck.cards))
+
+# if __name__ == "__main__":
+#     main()
