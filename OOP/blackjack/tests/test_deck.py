@@ -1,5 +1,4 @@
-from deck import Deck
-
+from ..deck import Deck
 
 
 class TestDeck:

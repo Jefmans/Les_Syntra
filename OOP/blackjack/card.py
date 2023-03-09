@@ -7,11 +7,15 @@ class Card:
         self.getal = getal
 
         self.waarde = self.set_waarde()
-        self.hidden = True
+        self.hidden = False
 
     def set_waarde(self):
         if self.getal == "K" or self.getal == "D" or self.getal == "V":
             return 10
+        elif self.getal == "A":
+            return 11
         else:
             return self.getal
     
+    def set_hidden(self):
+        self.hidden = True

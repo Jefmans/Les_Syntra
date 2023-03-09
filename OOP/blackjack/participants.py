@@ -1,5 +1,5 @@
-from hand import Hand
-from deck import Deck
+from .hand import Hand
+from .deck import Deck
 import random
 NR_DECKS = 6
 
@@ -26,7 +26,8 @@ class Dealer(Participant):
         random.shuffle(self.cards)
         
     def give_card(self):
-        pass
+        return self.cards.pop()
+
 
 
 class Player(Participant):
@@ -44,4 +45,4 @@ class Player(Participant):
 
     def _bet(self):
         pass
-    
+

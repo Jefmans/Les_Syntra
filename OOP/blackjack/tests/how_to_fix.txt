@@ -1,0 +1,10 @@
+Om VSC correct de testen te laten vinden is het nodig om 
+op juiste manier de objecten 
+te importeren in zowel de test files 'from ..<>"
+als in de project files "from .<>"
+
+
+Om de settings van pytest opnieuw aan te passen 
+kan je "CTRL + SHIFT + P" intoetsen
+daarna type je test => python:configure tests
+
