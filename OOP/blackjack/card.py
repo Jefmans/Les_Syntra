@@ -19,3 +19,6 @@ class Card:
     
     def set_hidden(self):
         self.hidden = True
+    
+    def __str__(self):
+        return f"{self.kleur} - {self.getal}"

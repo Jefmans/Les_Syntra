@@ -1,4 +1,4 @@
-from .participants import Player, Dealer
+from participants import Player, Dealer
 
 PLAYERS = [("jos", 200), ("jef", 100), ("jan", 40), ("joris", 10)]
 
@@ -12,14 +12,13 @@ class Game:
     def run(self):
         self.create_players()
         self.deel_kaarten_start()
+        for player in self.players:
+            self.turn(player)
 
     def create_players(self):
         for i in range(self.nr_players):
             naam, geld = PLAYERS[i]
-            self.players.append(Player(naam, geld))
-
-    def turn(self, choice):
-        self.player.take_action(choice)
+            self.players.append(Player(naam, geld, self))
 
     def deel_kaarten_start(self):
         for i in range(2):
@@ -34,9 +33,35 @@ class Game:
             card.set_hidden()
         self.dealer.hand.add_card(card)
 
+    def turn(self, player):
+        print(player.naam)
+        print("="*20)
+        print(player.hand)
+        if player.hand.check_if_blackjack():
+            print("Jeeuh gewonnen - BLACKJACK") 
+        else:
+            playing = True
+            while playing:
+                input_choice = input("kies: Hit of Pass\n" )
+                playing = player.take_action(input_choice)
+                print(player.hand)
+                if player.hand.check_if_burned():
+                    if not(player.hand.adjust_A()):
+                        print("Verloren")
+                        playing = False
+                    else:
+                        print(player.hand)
+            
+        
+        # self.player.take_action(choice)
+
+
 
 
 
 def main():
     game = Game(len(PLAYERS))
     game.run()
+
+if __name__ == "__main__":
+    main()
