@@ -34,6 +34,7 @@ class Game:
         self.dealer.hand.add_card(card)
 
     def turn(self, player):
+        print("="*20)
         print(player.naam)
         print("="*20)
         print(player.hand)
@@ -44,13 +45,16 @@ class Game:
             while playing:
                 input_choice = input("kies: Hit of Pass\n" )
                 playing = player.take_action(input_choice)
-                print(player.hand)
-                if player.hand.check_if_burned():
-                    if not(player.hand.adjust_A()):
-                        print("Verloren")
-                        playing = False
-                    else:
-                        print(player.hand)
+                if playing: 
+                    print(player.hand)
+                    if player.hand.check_if_burned():
+                        if not(player.hand.adjust_A()):
+                            print("Verloren")
+                            playing = False
+                        else:
+                            print('-'*20)
+                            print("waarde Aas aangepast naar 1")
+                            print(player.hand)
             
         
         # self.player.take_action(choice)
